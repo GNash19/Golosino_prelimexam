@@ -26,12 +26,15 @@ You will be given a functional but plain-looking quiz application boilerplate. Y
 
 - **Core Logic**: You must not break the core quiz functionality of the provided boilerplate. You can add to or refactor the JavaScript for better interactivity, but the quiz must remain fully functional.
 
-- **AI Tools**: You are strongly encouraged to use any publicly available AI tools to assist with design, asset creation, and coding.
+- **AI Tools**: You must use any publicly available AI tools to assist with design, asset creation, and coding.
+
+- **Consultation not Collaboration**: You can ask your classmates for information about something that you find difficult. However you are not allowed to do anything on behalf of each other.
 
 ### 1.3. Expected Deliverables (at the 90-minute mark)
 - **A Live URL**: A publicly accessible link to your deployed web application (e.g., via Vercel, Netlify, GitHub Pages).
 
 - **Source Code Repository**: A link to your GitHub repository.
+  - The repository should contain all the prompts that you have used.
 
 ## 2. Boilerplate Overview & Enhancement Goals
 You will start with a simple, unstyled quiz application. Your goal is to build upon this foundation.
