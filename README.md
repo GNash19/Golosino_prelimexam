@@ -73,4 +73,21 @@ You will be judged on how well you improve the boilerplate. Focus on these areas
 
 - **JavaScript for Interactivity**: Use AI to help write or refactor JavaScript functions for animations and DOM manipulation.
 
-- **Content (Optional)**: Use an AI to generate new quiz questions if you want to change the topic to better suit your theme.
+- **Content**: Use an AI to generate new quiz questions if you want to change the topic to better suit your theme.
+
+## 4. Grading System
+
+| Category                             | Weight | Description                                                                                                                                     |
+| :----------------------------------- | :----: | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **User Interface (UI) Transformation** | 35 pts | How visually impressive and well-designed is the final product compared to the boilerplate? Assesses layout, color, typography, and aesthetics. |
+| **User Experience (UX) & Interactivity** | 30 pts | How does the application *feel* to use? Are the animations smooth? Is feedback clear and immediate? Is it fun and engaging?                     |
+| **Strategic AI Integration** | 25 pts | How effectively were AI tools used to achieve the design and interactivity goals? Did AI enable a higher quality result within the time limit?   |
+| **Code Quality & Creativity** | 10 pts | Is your added HTML, CSS, and JS clean, well-organized, and efficient? Did you implement a particularly clever feature or theme?                               |
+
+---
+
+#### **Bonus Points**
+* **Up to +10 Points:** Awarded for truly exceptional features like a theme switcher (e.g., light/dark mode), sound effects, or complex, original CSS animations.
+
+#### **Penalties**
+* **Broken Functionality:** If the core quiz logic (loading questions, checking answers, updating score) is broken in the final submission, the "User Experience (UX) & Interactivity" category will receive a score of **0**.
