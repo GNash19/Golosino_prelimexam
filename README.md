@@ -91,3 +91,20 @@ You will be judged on how well you improve the boilerplate. Focus on these areas
 
 #### **Penalties**
 * **Broken Functionality:** If the core quiz logic (loading questions, checking answers, updating score) is broken in the final submission, the "User Experience (UX) & Interactivity" category will receive a score of **0**.
+
+
+## 5. Example Enhancement Themes
+
+Use these ideas as a jumping-off point for your creative theme.
+
+1.  **Theme: "AstroQuiz"**
+    * **Target Course:** Astronomy
+    * **UI/UX Ideas:** Use an AI-generated starry night or nebula as a background. Style buttons to look like planets. The progress bar could be a rocket moving across the screen. Use glowing text effects.
+
+2.  **Theme: "The Ancient Scroll"**
+    * **Target Course:** History or Literature
+    * **UI/UX Ideas:** Use a parchment or papyrus texture for the background. Employ serif fonts like "Cinzel" or "Merriweather". Buttons could have a wax seal design on hover. Animate questions as if they are being unrolled.
+
+3.  **Theme: "Bio-Lab"**
+    * **Target Course:** Biology / Chemistry
+    * **UI/UX Ideas:** A clean, laboratory-style interface with a grid background. Use a color scheme of blues, greens, and whites. Icons could be beakers, DNA strands, or microscopes. Animate the progress bar to look like a filling test tube.
