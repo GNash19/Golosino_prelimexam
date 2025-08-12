@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Simple Quiz</h1>
+        <div id="quiz-content">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p id="question-text">Question goes here...</p>
+            <div id="options-container" class="options">
+                </div>
+            <p id="score-text">Score: 0</p>
+        </div>
+        <div id="results-container" class="results" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <p id="final-score"></p>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
