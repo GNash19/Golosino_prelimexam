@@ -1,7 +1,7 @@
 const questions = [
     {
         question: "What does the 'A' in the Avengers tower stand for?",
-        options: ["Alliance", "Avengers", "Assemble", "Academy"],
+        options: ["Alliance", "Avengers", "Assemble", "Adamus"],
         answer: "Avengers"
     },
     {
