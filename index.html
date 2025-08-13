@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App - Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Library Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Simple Quiz</h1>
-        <div id="quiz-content">
-            <div class="progress-container">
+    <!-- Background Music -->
+    <audio id="bg-music" autoplay loop>
+        <source src="https://cdn.pixabay.com/audio/2023/03/16/audio_127b7b7b7b.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Control -->
+    <button id="music-toggle" class="music-control" aria-label="Toggle background music">🔊</button>
+
+    <!-- Main Quiz Container -->
+    <main class="quiz-container">
+        <h1 class="quiz-title">📚 Library Knowledge Quiz</h1>
+
+        <!-- Quiz Content -->
+        <section id="quiz-content">
+            <div class="progress-container" aria-label="Progress">
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
-            <p id="question-text">Question goes here...</p>
-            <div id="options-container" class="options">
-                </div>
-            <p id="score-text">Score: 0</p>
-        </div>
-        <div id="results-container" class="results" style="display: none;">
-            <h2>Quiz Complete!</h2>
+            <p id="question-text" class="question-text">Question goes here...</p>
+            <div id="options-container" class="options"></div>
+            <p id="score-text" class="score-text">Score: 0</p>
+        </section>
+
+        <!-- Results -->
+        <section id="results-container" class="results hidden">
+            <h2 class="result-title">🎉 Well Done!</h2>
             <p id="final-score"></p>
-            <button id="restart-btn">Restart Quiz</button>
-        </div>
-    </div>
+            <button id="restart-btn" class="btn restart-btn">Restart Quiz</button>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
