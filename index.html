@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Library Quiz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Initiative: Quiz Protocol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="color-scheme" content="dark light">
 </head>
 <body>
-    <!-- Background Music -->
-    <audio id="bg-music" autoplay loop>
-        <source src="https://cdn.pixabay.com/audio/2023/03/16/audio_127b7b7b7b.mp3" type="audio/mpeg">
-    </audio>
-
-    <!-- Music Control -->
-    <button id="music-toggle" class="music-control" aria-label="Toggle background music">🔊</button>
-
-    <!-- Main Quiz Container -->
-    <main class="quiz-container">
-        <h1 class="quiz-title">📚 Library Knowledge Quiz</h1>
-
-        <!-- Quiz Content -->
-        <section id="quiz-content">
-            <div class="progress-container" aria-label="Progress">
-                <div class="progress-bar" id="progress-bar"></div>
+    <!-- Landing / Start Overlay -->
+    <div id="landing" class="landing" aria-labelledby="landing-title" role="dialog" aria-modal="true">
+        <div class="landing-inner">
+            <div class="logo" aria-hidden="true">
+                <!-- Original, non-trademarked, Avengers-inspired SVG logo -->
+                <svg viewBox="0 0 120 120" class="logo-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                            <stop offset="0%" stop-color="#C8102E"/>
+                            <stop offset="100%" stop-color="#0B3D91"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="60" cy="60" r="56" fill="none" stroke="url(#g)" stroke-width="6"/>
+                    <polygon points="60,18 85,100 72,100 65,80 55,80 48,100 35,100" fill="url(#g)" />
+                    <circle cx="60" cy="60" r="12" fill="#F9C74F" opacity="0.9"/>
+                </svg>
             </div>
-            <p id="question-text" class="question-text">Question goes here...</p>
-            <div id="options-container" class="options"></div>
-            <p id="score-text" class="score-text">Score: 0</p>
-        </section>
+            <h1 id="landing-title" class="title">Avengers Initiative</h1>
+            <p class="subtitle">Knowledge Assessment Protocol</p>
+            <button id="start-btn" class="btn primary">Assemble</button>
+            <p class="hint">Use keyboard or mouse. Audio plays on start. Press M to mute, T for theme.</p>
+        </div>
+    </div>
 
-        <!-- Results -->
-        <section id="results-container" class="results hidden">
-            <h2 class="result-title">🎉 Well Done!</h2>
-            <p id="final-score"></p>
-            <button id="restart-btn" class="btn restart-btn">Restart Quiz</button>
+    <!-- Ambient background visuals -->
+    <div class="bg-layer"></div>
+    <div class="particles" aria-hidden="true"></div>
+    <div class="beams" aria-hidden="true"></div>
+
+    <main class="app" aria-live="polite">
+        <header class="app-header">
+            <div class="brand">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-text">Avengers Academy Quiz</span>
+            </div>
+            <div class="controls">
+                <button id="theme-btn" class="btn ghost" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+                <button id="mute-btn" class="btn ghost" aria-pressed="false" aria-label="Toggle sound">🔊</button>
+            </div>
+        </header>
+
+        <section class="quiz-card" role="region" aria-labelledby="section-title">
+            <h2 id="section-title" class="sr-only">Quiz Area</h2>
+            <div class="progress-wrap" aria-label="Progress">
+                <div class="progress-meta">
+                    <span id="question-counter">Q1/3</span>
+                    <span id="score-text">Score: 0</span>
+                </div>
+                <div class="progress-container" aria-hidden="true">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="qa">
+                <div class="question-wrap">
+                    <p id="question-text" class="question" aria-live="assertive">Question goes here...</p>
+                </div>
+                <div id="options-container" class="options" role="list"></div>
+            </div>
+
+            <div id="results-container" class="results" hidden>
+                <h3>Mission Complete</h3>
+                <p id="final-score"></p>
+                <button id="restart-btn" class="btn">Restart</button>
+            </div>
         </section>
     </main>
 
